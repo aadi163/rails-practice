@@ -1,0 +1,26 @@
+<h1 class="text-center mt-4 mb-4">Products List</h1>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Seller Name</th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @productlists.each do |p| %>
+    <tr>
+      <td><%= p.sellerName %></td>
+      <td><%= p.prodcutName %></td>
+      <td><%= p.price %></td> 
+      <td><%= p.category %></td> 
+      <td> 
+      <a href="newbuyer"><button type="button" class="btn btn-success">Buy Now</button></a>
+      <%= link_to "Edit", productlists_edit_path(p) , class:"btn btn-primary" %>
+      </td> 
+    </tr>
+    <% end %>
+  </tbody>
+</table>

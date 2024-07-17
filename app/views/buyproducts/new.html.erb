@@ -1,0 +1,42 @@
+<h1 class="text-center mt-4 mb-4">Buy Your Product</h1>
+
+  <%= form_with model: @buyproducts do |form| %>
+  <div class="row g-3">
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :productName %><br></div>
+      <div class="form-control"><%= form.text_field :productname%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :price %><br></div>
+      <div class="form-control"><%= form.text_field :price%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :firstname %><br></div>
+      <div class="form-control"><%= form.text_field :fname%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :lastname %><br></div>
+      <div class="form-control"><%= form.text_field :lname%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :dob %><br></div>
+      <div class="form-control"><%= form.text_field :dob%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :city %><br></div>
+      <div class="form-control"><%= form.text_field :city%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :state %><br></div>
+      <div class="form-control"><%= form.text_field :state%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :pincode %><br></div>
+      <div class="form-control"><%= form.text_field :pincode%></div>
+    </div>
+    <div class="col-12">
+      <div class="form-label" ><%= form.submit %></div>
+    </div>
+  </div>
+  <% end %>
+

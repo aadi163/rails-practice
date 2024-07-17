@@ -1,0 +1,26 @@
+<h1 class="text-center mt-4 mb-4">Sell Your Product</h1>
+
+  <%= form_with model: @productlist do |form| %>
+  <div class="row g-3">
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :sellerName %><br></div>
+      <div class="form-control"><%= form.text_field :sellerName%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :productName %><br></div>
+      <div class="form-control"><%= form.text_field :prodcutName%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :price %><br></div>
+      <div class="form-control"><%= form.text_field :price%></div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-label" ><%= form.label :category %><br></div>
+      <div class="form-control"><%= form.text_field :category%></div>
+    </div>
+    <div class="col-12">
+      <div class="form-label" ><%= form.submit %></div>
+    </div>
+  </div>
+  <% end %>
+

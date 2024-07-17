@@ -1,0 +1,2 @@
+class Sellproduct< ApplicationRecord
+end
