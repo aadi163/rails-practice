@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>first name</th>
+      <th>last name</th>
+      <th>contact no</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @emp.each do |e| %>
+    <tr>
+      <td><%= e.fname %></td>
+      <td><%= e.lname %></td>
+      <td><%= e.contact %></td> 
+    </tr>
+    <% end %>
+  </tbody>
+</table>

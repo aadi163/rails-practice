@@ -1,0 +1,26 @@
+
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<h1>hello</>
+<br>
+
+<a href="about"> about </a> 
+<a href="contact"> contact </a> 
+<br>
+
+<%= link_to 'about us', about_path , target: 'blank' %>
+<br>
+<%= link_to 'contact us',contact_path , target: 'blank' %>
+<br>
+
+
+<%= link_to 'About Us', controller: :webpages, action: :about_us %>
+<br>
+
+<%= link_to nil , about_path %>
+
+<%= link_to 'employe', emp_path , target: 'blank' %>
+
+
+
+
