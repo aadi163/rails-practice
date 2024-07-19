@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  w_name: MyString
+  whicle: one
+  whicle_type: Whicle
+
+two:
+  w_name: MyString
+  whicle: two
+  whicle_type: Whicle
