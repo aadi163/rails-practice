@@ -10,15 +10,16 @@
     </tr>
   </thead>
   <tbody>
-    <% @productlists.each do |p| %>
+    <% @productlists.each do |productlist| %>
     <tr>
-      <td><%= p.sellerName %></td>
-      <td><%= p.prodcutName %></td>
-      <td><%= p.price %></td> 
-      <td><%= p.category %></td> 
+      <td><%= productlist.sellerName %></td>
+      <td><%= productlist.prodcutName %></td>
+      <td><%= productlist.price %></td> 
+      <td><%= productlist.category %></td> 
       <td> 
       <a href="newbuyer"><button type="button" class="btn btn-success">Buy Now</button></a>
-      <%= link_to "Edit", productlists_edit_path(p) , class:"btn btn-primary" %>
+      <%= link_to "Edit", edit_productlist_path(productlist) , class:"btn btn-primary" %>
+      <%= link_to "Show", productlist_path(productlist) , class:"btn btn-info" %>
       </td> 
     </tr>
     <% end %>

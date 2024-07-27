@@ -3,20 +3,20 @@
   <%= form_with model: @productlist do |form| %>
   <div class="row g-3">
     <div class="col-md-3">
-      <div class="form-label" ><%= form.label :sellerName %><br></div>
-      <div class="form-control"><%= form.text_field :sellerName%></div>
+      <%= form.label :sellerName ,class:"form-label"%><br>
+      <%= form.text_field :sellerName , class:"form-control"%>
     </div>
     <div class="col-md-3">
       <div class="form-label" ><%= form.label :productName %><br></div>
-      <div class="form-control"><%= form.text_field :prodcutName%></div>
+      <%= form.text_field :prodcutName , class:"form-control"%>
     </div>
     <div class="col-md-3">
       <div class="form-label" ><%= form.label :price %><br></div>
-      <div class="form-control"><%= form.text_field :price%></div>
+      <%= form.text_field :price , class:"form-control"%>
     </div>
     <div class="col-md-3">
       <div class="form-label" ><%= form.label :category %><br></div>
-      <div class="form-control"><%= form.text_field :category%></div>
+      <%= form.text_field :category , class:"form-control"%>
     </div>
     <div class="col-12">
       <div class="form-label" ><%= form.submit %></div>

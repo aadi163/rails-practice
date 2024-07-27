@@ -2,7 +2,11 @@ class ProductlistsController < ApplicationController
   def prod
     @productlists = Productlist.all
   end
-  
+
+  def show
+    @productlist = Productlist.find(params[:id])
+  end
+
   def new
     # byebug
     @productlist = Productlist.new

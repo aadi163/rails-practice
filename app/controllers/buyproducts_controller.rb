@@ -8,8 +8,8 @@ class BuyproductsController < ApplicationController
   end   
 
   def create
-    @buyproducts = Buyproduct.new(product_params)
-    if @buyproducts.save
+    @buyproduct = Buyproduct.new(product_params)
+    if @buyproduct.save
       redirect_to buyers_path
     else
       render :new 
